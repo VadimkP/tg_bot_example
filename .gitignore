@@ -1,4 +1,5 @@
 /.token
 /.idea
 /*.iml
-/sqlite
+/sqlite/
+

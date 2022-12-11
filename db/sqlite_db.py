@@ -1,5 +1,4 @@
 import sqlite3 as sql
-from create_bot import bot
 
 
 def sql_start():
