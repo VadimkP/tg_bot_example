@@ -7,7 +7,7 @@ from keyboards import navigation_kb
 
 urlContacts = InlineKeyboardMarkup(row_width=1)
 urlInsta = InlineKeyboardButton(text='Инстаграм', url='https://www.instagram.com/altay_honey__/')
-urlTg = InlineKeyboardButton(text='Телеграм Канал', url='https://t.me/altay_honey')
+urlTg = InlineKeyboardButton(text='Телеграм Канал', url='https://t.me/altay_honey_spb')
 urlContacts.add(urlInsta, urlTg)
 
 

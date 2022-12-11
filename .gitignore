@@ -1,6 +1,6 @@
-/.token
-/.idea
-/*.iml
-/sqlite/
+.token
+.idea
+*.iml
+sqlite/*.db
 */__pycahce__/
 
