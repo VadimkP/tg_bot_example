@@ -100,7 +100,8 @@ async def confirm_order(callback_query: types.CallbackQuery):
             await order.order_run(callback_query.message.chat.id)
         except:
             await callback_query.answer(text='Что-то пошло не так, попробуйте еще раз.')
-            print(f"Ошибка у пользователя {callback_query.message.chat.full_name}")
+            print(f"Ошибка у пользователя {callback_query.message.chat.first_name} "
+                  f"{callback_query.message.chat.last_name}")
         # print(callback_query.message.chat.id)
 
 
