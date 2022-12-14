@@ -46,6 +46,7 @@ async def user_location(message: types.Message, state: FSMContext):
     user_data = await state.get_data()
     await bot.send_message(-1001680885060, f"<b>Новый заказ!</b>"
                                            f"\n\nИмя: {user_data['name']}"
+                                           f"\nUsername: @{message.from_user.username}"
                                            f"\nТелефон: {user_data['number']}"
                                            f"\nАдрес: {user_data['location']}"
                                            f"\n\n<b>Заказ:</b>"
