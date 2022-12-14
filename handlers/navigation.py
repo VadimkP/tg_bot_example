@@ -96,7 +96,10 @@ async def confirm_order(callback_query: types.CallbackQuery):
     if not f:
         await callback_query.answer(text=f'Ваша корзина пуста', show_alert=True)
     else:
-        await order.order_run(callback_query.message.chat.id)
+        try:
+            await order.order_run(callback_query.message.chat.id)
+        except:
+            await callback_query.answer(text='Что-то пошло не так, попробуйте еще раз.')
         # print(callback_query.message.chat.id)
 
 
