@@ -15,7 +15,8 @@ class FSMOrder(StatesGroup):
 
 async def order_run(chat_id):
     await FSMOrder.number.set()
-    await bot.send_message(chat_id, "Пришлите нам свой номер телефона",
+    await bot.send_message(chat_id, "Пришлите нам свой номер телефона"
+                                    "\nНажмите на кнопку 'Отправить контакт 👇'",
                            reply_markup=order_kb.button_order)
 
 

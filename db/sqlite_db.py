@@ -7,6 +7,7 @@ def sql_start():
     cur = base.cursor()
     if base:
         print('DB connect OK!')
+        print('--------------')
     base.execute("""CREATE TABLE IF NOT EXISTS honey(img TEXT, type TEXT, name TEXT PRIMARY KEY, description TEXT, price TEXT)""")
     base.execute("""CREATE TABLE IF NOT EXISTS users(user_id TEXT UNIQUE, full_name TEXT)""")
     base.execute("""CREATE TABLE IF NOT EXISTS cart(name TEXT, user_id TEXT)""")
