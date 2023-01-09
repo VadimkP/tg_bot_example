@@ -53,7 +53,8 @@ async def user_location(message: types.Message, state: FSMContext):
                                            f"\n\n<b>Заказ:</b>"
                                            f"{dc}\n",
                            parse_mode="HTML")
-    await message.reply("Заказ передан.\nСпасибо что выбрали нас 😉",
+    await message.reply("Заказ передан.\nСпасибо что выбрали нас 😉"
+                        "\nМы свяжемся с вами в ближайшее время для уточнения деталей 🐝",
                         reply_markup=navigation_kb.button_case_menu)
 
     await state.finish()
